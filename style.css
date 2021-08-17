@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #313638;
+    box-shadow: 1px 1px 5px 1px #c5c5c5;
+    color: #fff;
+}
+
+.nav-center {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-center h4 {
+    font-size: larger;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* height: 93.2vh; */
+}
+
+.colors-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 93.2vh;
+}
+
+.actions {
+    opacity: 0;
+}
+
+.arrow-next {
+    font-size: 3rem !important;
+    cursor: pointer;
+    bottom: 5%;
+    position: absolute;
+    right: 1rem;
+    z-index: 99999999999;
+}
+
+.hex-one {
+    position: relative;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.hex-one:hover>.actions {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hex-two {
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.hex-two:hover>.actions {
+    opacity: 1;
+}
+
+.hex-three {
+    position: relative;
+    cursor: pointer;
+    background-color: #f2a54c;
+}
+
+.hex-three:hover>.actions {
+    opacity: 1;
+}
+
+.hex-four {
+    position: relative;
+    cursor: pointer;
+    background-color: #c86ec3;
+}
+
+.hex-four:hover>.actions {
+    opacity: 1;
+}
+
+.hex-five {
+    position: relative;
+    cursor: pointer;
+    background-color: #BDB083;
+}
+
+.hex-five:hover>.actions {
+    opacity: 1;
+}
+
+.fa-caret-right {
+    font-size: 20rem;
+}
+
+@media(max-width:468px) {
+    nav {
+        padding: 1rem;
+    }
+    .nav-center h4 {
+        font-size: medium;
+        text-align: justify;
+    }
+    .container h2 {
+        background: #f1f5f8;
+        width: 100%;
+    }
+    a {
+        font-size: small;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 1458px) {
+    .colors-container {
+        max-width: 450px;
+    }
+}
